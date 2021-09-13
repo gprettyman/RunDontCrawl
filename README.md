@@ -1,5 +1,5 @@
 # RunDontCrawl
-A "dungeon crawler" style game that I hope will be fun.
+A "dungeon crawler" style game that I hope will be fun!
 
 Core Objectives of the game:
   1) Fun
