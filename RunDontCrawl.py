@@ -7,7 +7,10 @@ random.seed()
 
 
 # Creates the player's cards 
+<<<<<<< HEAD
 # "Basic" moves
+=======
+>>>>>>> 47447a72d3c22ce4353ba0ff7d076d3f3d943e83
 basicPress = {
     "name": "Press Attack (Basic)", 
     "type": "Press", 
@@ -15,6 +18,7 @@ basicPress = {
     "SPDrain": 0, 
     "hitDamage": 4
 }
+<<<<<<< HEAD
 
 basicAttack = {
     "name": "Basic Attack", 
@@ -47,6 +51,8 @@ basicEvade = {
 
 
 # Strong-specific moves
+=======
+>>>>>>> 47447a72d3c22ce4353ba0ff7d076d3f3d943e83
 strikeHead = {
     "name": "Strike Head", 
     "type": "Press", 
@@ -55,6 +61,7 @@ strikeHead = {
     "hitDamage": 8
 }
 
+<<<<<<< HEAD
 block = {
     "name": "Block", 
     "type": "Defend", 
@@ -63,6 +70,8 @@ block = {
     "defendDamage": 8
 }
 
+=======
+>>>>>>> 47447a72d3c22ce4353ba0ff7d076d3f3d943e83
 smashDefenses = {
     "name": "Smash Defenses", 
     "type": "Press", 
@@ -71,7 +80,11 @@ smashDefenses = {
     "hitDamage": 14
 }
 
+<<<<<<< HEAD
 # Fast-specific moves
+=======
+
+>>>>>>> 47447a72d3c22ce4353ba0ff7d076d3f3d943e83
 sneakAttack = {
     "name": "Sneak Attack", 
     "type": "Press", 
@@ -80,6 +93,7 @@ sneakAttack = {
     "hitDamage": 8
 }
 
+<<<<<<< HEAD
 smokeBomb = {
     "name": "Smoke Bomb", 
     "type": "Evade", 
@@ -117,6 +131,42 @@ magicMirror = {
 
 fighterDeck = [strikeHead, block, smashDefenses, basicPress, basicAttack, basicDefend, basicEvade]
 rogueDeck = [strikeHead, sneakAttack, basicPress, basicAttack, basicDefend, basicEvade]
+=======
+basicAttack = {
+    "name": "Basic Attack", 
+    "type": "Attack", 
+    "condition": 8, 
+    "SPDrain": 0, 
+    "hitDamage": 2
+}
+
+basicDefend = {
+    "name": "Basic Defend", 
+    "type": "Defend", 
+    "condition": 8, 
+    "SPDrain": 0, 
+    "defendDamage": 2
+}
+block = {
+    "name": "Block", 
+    "type": "Defend", 
+    "condition": 12, 
+    "SPDrain": 10, 
+    "defendDamage": 8
+}
+
+basicEvade = {
+    "name": "Basic Evade", 
+    "type": "Evade", 
+    "condition": 8, 
+    "SPDrain": 1, 
+    "defendDamage": 4
+}
+
+
+fighterDeck = [strikeHead, block, smashDefenses, basicPress, basicAttack, basicDefend, basicEvade]
+rogueDeck = [strikeHead, block, sneakAttack, basicPress, basicAttack, basicDefend, basicEvade]
+>>>>>>> 47447a72d3c22ce4353ba0ff7d076d3f3d943e83
 
 # Stat blocks for Characters
 player = {
@@ -265,4 +315,8 @@ while (player["hp"] > 0 and enemy["hp"] > 0):
 if enemy["hp"] <= 0:
     print("You have defeated the enemy. Congratulations!")
 elif player["hp"] <= 0:
+<<<<<<< HEAD
     print("You were defeated. Better luck next time!")
+=======
+    print("You were defeated. Better luck next time!")
+>>>>>>> 47447a72d3c22ce4353ba0ff7d076d3f3d943e83
