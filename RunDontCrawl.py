@@ -7,36 +7,13 @@ random.seed()
 
 
 # Creates the player's cards 
+# "Basic" moves
 basicPress = {
     "name": "Press Attack (Basic)", 
     "type": "Press", 
     "condition": 8, 
     "SPDrain": 0, 
     "hitDamage": 4
-}
-strikeHead = {
-    "name": "Strike Head", 
-    "type": "Press", 
-    "condition": 12, 
-    "SPDrain": 10, 
-    "hitDamage": 8
-}
-
-smashDefenses = {
-    "name": "Smash Defenses", 
-    "type": "Press", 
-    "condition": 12, 
-    "SPDrain": 12, 
-    "hitDamage": 14
-}
-
-
-sneakAttack = {
-    "name": "Sneak Attack", 
-    "type": "Press", 
-    "condition": 12, 
-    "SPDrain": 8, 
-    "hitDamage": 8
 }
 
 basicAttack = {
@@ -54,13 +31,6 @@ basicDefend = {
     "SPDrain": 0, 
     "defendDamage": 2
 }
-block = {
-    "name": "Block", 
-    "type": "Defend", 
-    "condition": 12, 
-    "SPDrain": 10, 
-    "defendDamage": 8
-}
 
 basicEvade = {
     "name": "Basic Evade", 
@@ -71,8 +41,82 @@ basicEvade = {
 }
 
 
+# "General" moves all characters have
+
+
+
+
+# Strong-specific moves
+strikeHead = {
+    "name": "Strike Head", 
+    "type": "Press", 
+    "condition": 12, 
+    "SPDrain": 10, 
+    "hitDamage": 8
+}
+
+block = {
+    "name": "Block", 
+    "type": "Defend", 
+    "condition": 12, 
+    "SPDrain": 10, 
+    "defendDamage": 8
+}
+
+smashDefenses = {
+    "name": "Smash Defenses", 
+    "type": "Press", 
+    "condition": 12, 
+    "SPDrain": 12, 
+    "hitDamage": 14
+}
+
+# Fast-specific moves
+sneakAttack = {
+    "name": "Sneak Attack", 
+    "type": "Press", 
+    "condition": 12, 
+    "SPDrain": 8, 
+    "hitDamage": 8
+}
+
+smokeBomb = {
+    "name": "Smoke Bomb", 
+    "type": "Evade", 
+    "condition": 12, 
+    "SPDrain": 10, 
+    "defendDamage": 10
+}
+
+legSweep = {
+    "name": "Leg Sweep", 
+    "type": "Attack", 
+    "condition": 10, 
+    "SPDrain": 6, 
+    "hitDamage": 7
+}
+
+""" - Future Expansion
+# Magic moves
+fireball = {
+    "name": "Fireball", 
+    "type": "Attack", 
+    "condition": 16, 
+    "SPDrain": 14, 
+    "hitDamage": 20
+}
+
+magicMirror = {
+    "name": "Magic Mirror", 
+    "type": "Evade", 
+    "condition": 16, 
+    "SPDrain": 10, 
+    "defendDamage": 20
+}
+"""
+
 fighterDeck = [strikeHead, block, smashDefenses, basicPress, basicAttack, basicDefend, basicEvade]
-rogueDeck = [strikeHead, block, sneakAttack, basicPress, basicAttack, basicDefend, basicEvade]
+rogueDeck = [strikeHead, sneakAttack, basicPress, basicAttack, basicDefend, basicEvade]
 
 # Stat blocks for Characters
 player = {
